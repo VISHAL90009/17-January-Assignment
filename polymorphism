@@ -1,0 +1,101 @@
+Q-1
+#include <iostream>
+using namespace std;
+
+class Animal{
+    public:
+    int a;
+    char b;
+    Animal(){ 
+        a=0;
+        b=0;
+        
+}
+void Anim(int a){
+    this->a=a;
+}
+void Anim(char b){
+    this->b=b;
+}
+};
+int main() {
+    // Write C++ code here
+    Animal m1;
+    m1.Anim(6);
+    m1.Anim('B');
+    cout<<m1.a<<endl;
+    cout<<m1.b<<endl;
+  
+
+    return 0;
+}
+
+Q-2
+
+#include <iostream>
+using namespace std;
+
+class Rectangle
+{
+    public:
+    
+   int fun1(int x, int y)
+    {
+        cout<< "Perimeter of rectangle is : "<<2*(x+y);
+        return 0;
+    }
+    
+         int fun1(float x ,int y)
+    {
+        cout<< "Perimeter of rectangle is : "<<2*(x+y);
+        return 0;
+    }
+    int fun1(float x, int y)
+    {
+        cout<< "Perimeter of rectangle is : "<<2*(x+y);
+        return 0;
+    }
+    
+   int  fun1(float x ,float y)
+    {
+        cout<< "Perimeter of rectangle is : "<<2*(x+y);
+        return 0;
+    }
+};
+
+int main() {
+    // Write C++ code here
+  Rectangle  p1;
+    
+    p1.fun1(2,2);
+    p1.fun1(2.3,2);
+    p1.fun1(8.2,2);
+    p1.fun1(2.3,5.3);
+
+    return 0;
+}
+
+Q-3
+#include<iostream>
+using namespace std;
+class rectangle{
+    public:
+    void area(int x){
+        cout<<"\nLength: "<<x;
+    }
+    void area(int x,int y){
+        cout<<"\nInt area "<<x*y;
+    }
+};
+class square : public rectangle{
+    
+};
+int main
+()
+{
+    square re;
+    re.area(5);
+    re.area(5,6);
+    
+    return 0;
+}
